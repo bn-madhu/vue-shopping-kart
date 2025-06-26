@@ -1,7 +1,10 @@
 <template>
-  <h1>Hello Vue shopping cart]</h1>
+  <ErrorBoundary>
+    <router-view />
+  </ErrorBoundary>
 </template>
 
-<style scoped>
 
-</style>
+<script setup>
+import ErrorBoundary from './components/ErrorBoundary.vue';
+</script>
